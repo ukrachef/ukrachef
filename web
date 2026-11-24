@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UKRACHEF | Chefs ukrainiens en France</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111318;
+  color: white;
+}
+header {
+  padding: 24px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #303039;
+}
+.logo { font-size: 27px; font-weight: 900; }
+.logo span { color: #e5b94d; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+  background: linear-gradient(135deg,#20232b,#111318);
+}
+.hero h1 { font-size: clamp(38px,7vw,70px); }
+.gold { color: #e5b94d; }
+.hero p {
+  color: #c4c4c4;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #e5b94d;
+  color: #111318;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+section { padding: 65px 8%; }
+h2 { text-align: center; font-size: 32px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #20232b;
+  padding: 28px;
+  border-radius: 12px;
+}
+.card h3 { color: #e5b94d; }
+.card p { color: #c4c4c4; line-height: 1.6; }
+.about { text-align: center; }
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #aaa;
+  border-top: 1px solid #303039;
+}
+@media(max-width:600px) {
+  header { flex-direction: column; gap: 18px; }
+  nav a { margin: 0 8px; font-size: 14px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">UKRA<span>CHEF</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>UKRA<span class="gold">CHEF</span></h1>
+  <p>Une équipe ukrainienne de professionnels de la cuisine en France.</p>
+  <p>Passion, savoir-faire et qualité dans chaque prestation.</p>
+  <a class="btn" href="#contact">Nous contacter</a>
+</div>
+
+<section id="services">
+  <h2>Nos services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>👩‍🍳 Prestations culinaires</h3>
+      <p>Des professionnels de la cuisine pour vos besoins.</p>
+    </div>
+    <div class="card">
+      <h3>🍽️ Événements</h3>
+      <p>Une équipe de cuisine pour vos événements et réceptions.</p>
+    </div>
+    <div class="card">
+      <h3>⭐ Équipe professionnelle</h3>
+      <p>Des cuisiniers ukrainiens motivés et expérimentés.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Qui sommes-nous ?</h2>
+  <p>Nous sommes une équipe ukrainienne travaillant dans le domaine de la cuisine en France.</p>
+  <p>Notre objectif : proposer un service sérieux et de qualité.</p>
+</section>
+
+<section id="contact">
+  <h2>Contactez-nous</h2>
+  <p style="text-align:center;color:#ccc">
+    Vous souhaitez travailler avec notre équipe ?
+  </p>
+  <div style="text-align:center">
+    <a class="btn" href="mailto:toxfoxi636@gmail.com">Demander un devis</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 UKRACHEF — Tous droits réservés.
+</footer>
+
+</body>
+</html>
